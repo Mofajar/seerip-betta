@@ -37,6 +37,18 @@
     };
   </script>
   <style>
+    /* Teks emas dengan kilau yang bergeser pelan */
+    .text-gold {
+      background: linear-gradient(100deg, #B8862B 0%, #F8E3A3 25%, #E5B94E 50%, #FFF1C9 70%, #C8962E 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gold-shine 8s ease-in-out infinite alternate;
+    }
+    @keyframes gold-shine {
+      to { background-position: 200% center; }
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition: none !important; animation: none !important; }
@@ -72,24 +84,27 @@
 
   <main>
     <!-- ========== HERO ========== -->
-    <section class="relative overflow-hidden bg-primary text-white">
-      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28">
+    <section id="hero" class="relative overflow-hidden bg-[#0A0806] text-white">
+      <!-- Kanvas animasi cupang (dekorasi, diabaikan pembaca layar) -->
+      <canvas id="hero-canvas" class="pointer-events-none absolute inset-0" aria-hidden="true"></canvas>
+      <div class="relative z-10 mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28">
         <div>
-          <p class="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-sky-100">Ikan cupang hias, dirawat sepenuh hati</p>
-          <h1 class="font-serif text-4xl font-bold leading-tight text-balance sm:text-5xl">
+          <p class="mb-4 inline-block rounded-full bg-amber-200/10 px-3 py-1 text-sm font-medium text-amber-100 ring-1 ring-amber-200/20">Ikan cupang hias, dirawat sepenuh hati</p>
+          <h1 class="text-gold font-serif text-4xl font-bold leading-tight text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] sm:text-5xl">
             Sirip indah, warna memukau, langsung dari kolam kami.
           </h1>
-          <p class="mt-6 max-w-lg text-lg leading-relaxed text-sky-100">
+          <p class="mt-6 max-w-lg text-lg leading-relaxed text-stone-300">
             Seerip Betta adalah usaha kecil yang membudidayakan dan memilih ikan cupang hias satu per satu. Tanya stok, lihat foto/video ikan, dan pesan langsung lewat WhatsApp.
           </p>
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="#" data-wa class="inline-flex min-h-[48px] items-center gap-2 rounded-full bg-cta px-6 font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-cta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               Pesan via WhatsApp
             </a>
-            <a href="#koleksi" class="inline-flex min-h-[48px] items-center rounded-full border border-white/40 px-6 font-semibold text-white transition-colors duration-200 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <a href="#koleksi" class="inline-flex min-h-[48px] items-center rounded-full border border-amber-200/40 px-6 font-semibold text-amber-50 transition-colors duration-200 hover:bg-amber-200/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200">
               Lihat Koleksi
             </a>
           </div>
+          <p class="mt-6 text-sm text-stone-400">Gerakkan kursor, lalu klik kanan (atau tekan lama) di area kosong.</p>
         </div>
 
         <!-- Foto utama -->
@@ -97,7 +112,7 @@
           src="assets/img-header-1.jpg"
           alt="Foto ikan Seerip Betta"
           width="800" height="800"
-          class="mx-auto aspect-square w-full max-w-md rounded-[2rem] bg-primary-dark object-cover ring-1 ring-white/20"
+          class="mx-auto aspect-square w-full max-w-md rounded-[2rem] bg-stone-900 object-cover ring-1 ring-amber-200/30"
         />
       </div>
     </section>
@@ -252,5 +267,6 @@
     });
     document.getElementById('tahun').textContent = new Date().getFullYear();
   </script>
+  <script src="js/betta-hero.js" defer></script>
 </body>
 </html>
