@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seerip Betta — Ikan Cupang Hias Pilihan</title>
+  <meta name="description" content="Seerip Betta: usaha kecil ikan cupang hias. Halfmoon, Plakat, Crowntail, dan lainnya. Pesan langsung lewat WhatsApp." />
+
+  <!-- Font: Playfair Display (judul) + Inter (teks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind versi CDN (cocok untuk latihan, bukan untuk produksi) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0B4F6C',      // biru laut dalam
+            'primary-dark': '#083A50',
+            cta: '#047857',          // hijau WhatsApp gelap (kontras aman)
+            'cta-dark': '#065F46',
+            fin: '#B91C1C',          // merah sirip cupang (aksen)
+            bg: '#F5FAFC',
+            ink: '#0F172A',
+            muted: '#475569',
+            line: '#D6E6EE',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased">
+  <!-- Link lompat ke konten (untuk pengguna keyboard) -->
+  <a href="#koleksi" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow">Lompat ke konten</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="sticky top-0 z-40 border-b border-line/70 bg-bg/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6" aria-label="Navigasi utama">
+      <a href="#" class="flex items-center gap-2 font-serif text-xl font-bold text-primary">
+        <svg class="h-7 w-7" viewBox="0 0 64 64" aria-hidden="true">
+          <path fill="currentColor" d="M8 32c6-10 18-14 28-10 4-8 12-12 20-10-4 6-4 12-2 18 2 6 2 12-2 18-8 2-16-2-20-10-10 4-22 0-28-10 0 0 2-2 4 4z" />
+          <circle cx="16" cy="30" r="2.5" fill="#F5FAFC" />
+        </svg>
+        Seerip Betta
+      </a>
+      <ul class="hidden items-center gap-8 text-sm font-medium text-muted md:flex">
+        <li><a href="#koleksi" class="transition-colors duration-200 hover:text-primary">Koleksi</a></li>
+        <li><a href="#keunggulan" class="transition-colors duration-200 hover:text-primary">Kenapa Kami</a></li>
+        <li><a href="#testimoni" class="transition-colors duration-200 hover:text-primary">Testimoni</a></li>
+      </ul>
+      <a href="#" data-wa class="inline-flex min-h-[44px] items-center gap-2 rounded-full bg-cta px-4 text-sm font-semibold text-white transition-colors duration-200 hover:bg-cta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cta">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+        <span>Chat WhatsApp</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="relative overflow-hidden bg-primary text-white">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28">
+        <div>
+          <p class="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-sky-100">Ikan cupang hias, dirawat sepenuh hati</p>
+          <h1 class="font-serif text-4xl font-bold leading-tight text-balance sm:text-5xl">
+            Sirip indah, warna memukau, langsung dari kolam kami.
+          </h1>
+          <p class="mt-6 max-w-lg text-lg leading-relaxed text-sky-100">
+            Seerip Betta adalah usaha kecil yang membudidayakan dan memilih ikan cupang hias satu per satu. Tanya stok, lihat foto/video ikan, dan pesan langsung lewat WhatsApp.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#" data-wa class="inline-flex min-h-[48px] items-center gap-2 rounded-full bg-cta px-6 font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-cta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              Pesan via WhatsApp
+            </a>
+            <a href="#koleksi" class="inline-flex min-h-[48px] items-center rounded-full border border-white/40 px-6 font-semibold text-white transition-colors duration-200 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              Lihat Koleksi
+            </a>
+          </div>
+        </div>
+
+        <!-- Foto utama -->
+        <img
+          src="assets/img-header-1.jpg"
+          alt="Foto ikan Seerip Betta"
+          width="800" height="800"
+          class="mx-auto aspect-square w-full max-w-md rounded-[2rem] bg-primary-dark object-cover ring-1 ring-white/20"
+        />
+      </div>
+    </section>
+
+    <!-- ========== KOLEKSI ========== -->
+    <section id="koleksi" class="mx-auto max-w-6xl scroll-mt-20 px-4 py-20 sm:px-6">
+      <div class="max-w-2xl">
+        <p class="text-sm font-semibold uppercase tracking-wider text-fin">Koleksi</p>
+        <h2 class="mt-2 font-serif text-3xl font-bold sm:text-4xl">Jenis cupang yang biasa tersedia</h2>
+        <p class="mt-4 text-muted">Stok berganti setiap minggu. Tanyakan via WhatsApp untuk foto/video ikan yang tersedia beserta harganya.</p>
+      </div>
+
+      <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Sementara semua kartu memakai foto yang sama. Ganti src tiap kartu dengan foto jenisnya masing-masing. -->
+        <li class="group overflow-hidden rounded-2xl border border-line bg-white transition-shadow duration-200 hover:shadow-lg">
+          <img src="assets/img-header-1.jpg" alt="Foto ikan Seerip Betta jenis Halfmoon" width="800" height="600" loading="lazy" class="aspect-[4/3] w-full bg-line object-cover" />
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold">Halfmoon</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Ekor mengembang hingga 180° seperti setengah bulan. Favorit untuk pajangan dan kontes.</p>
+          </div>
+        </li>
+        <li class="group overflow-hidden rounded-2xl border border-line bg-white transition-shadow duration-200 hover:shadow-lg">
+          <img src="assets/img-header-1.jpg" alt="Foto ikan Seerip Betta jenis Plakat" width="800" height="600" loading="lazy" class="aspect-[4/3] w-full bg-line object-cover" />
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold">Plakat</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Sirip pendek, badan kekar, dan gerak lincah. Cocok untuk pemula karena perawatannya mudah.</p>
+          </div>
+        </li>
+        <li class="group overflow-hidden rounded-2xl border border-line bg-white transition-shadow duration-200 hover:shadow-lg">
+          <img src="assets/img-header-1.jpg" alt="Foto ikan Seerip Betta jenis Crowntail" width="800" height="600" loading="lazy" class="aspect-[4/3] w-full bg-line object-cover" />
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold">Crowntail</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Ujung sirip bergerigi seperti mahkota. Tampil dramatis saat mengembang.</p>
+          </div>
+        </li>
+        <li class="group overflow-hidden rounded-2xl border border-line bg-white transition-shadow duration-200 hover:shadow-lg">
+          <img src="assets/img-header-1.jpg" alt="Foto ikan Seerip Betta jenis Koi" width="800" height="600" loading="lazy" class="aspect-[4/3] w-full bg-line object-cover" />
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold">Koi</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Motif belang mirip ikan koi. Setiap ekor punya pola yang berbeda.</p>
+          </div>
+        </li>
+        <li class="group overflow-hidden rounded-2xl border border-line bg-white transition-shadow duration-200 hover:shadow-lg">
+          <img src="assets/img-header-1.jpg" alt="Foto ikan Seerip Betta jenis Giant" width="800" height="600" loading="lazy" class="aspect-[4/3] w-full bg-line object-cover" />
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold">Giant</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Ukuran badan lebih besar dari cupang biasa, terlihat gagah di akuarium.</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center rounded-2xl border border-dashed border-primary/40 bg-primary/5 p-6">
+          <h3 class="font-serif text-xl font-bold text-primary">Cari jenis lain?</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Sebutkan jenis atau warna yang kamu mau, nanti kami bantu carikan.</p>
+          <a href="#" data-wa class="mt-4 inline-flex min-h-[44px] w-fit items-center rounded-full bg-cta px-5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-cta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cta">Tanya Stok</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== KENAPA SEERIP BETTA ========== -->
+    <section id="keunggulan" class="scroll-mt-20 border-y border-line bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-wider text-fin">Kenapa Seerip Betta</p>
+          <h2 class="mt-2 font-serif text-3xl font-bold sm:text-4xl">Usaha kecil, perhatian besar</h2>
+        </div>
+        <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12s3.75-7.5 9.75-7.5S21.75 12 21.75 12s-3.75 7.5-9.75 7.5S2.25 12 2.25 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold">Dipilih satu per satu</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Setiap ikan dicek kesehatan, warna, dan bentuk siripnya sebelum ditawarkan.</p>
+          </div>
+          <div>
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.16-5.16a2.25 2.25 0 0 1 3.18 0l5.16 5.16m-1.5-1.5 1.41-1.41a2.25 2.25 0 0 1 3.18 0l2.91 2.91M3.75 19.5h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Z"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold">Foto &amp; video asli</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Yang kamu lihat adalah ikan yang akan kamu terima, bukan gambar contoh.</p>
+          </div>
+          <div>
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5 12 3 3.75 7.5m16.5 0L12 12m8.25-4.5v9L12 21m0-9L3.75 7.5M12 12v9M3.75 7.5v9L12 21"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold">Dikemas dengan aman</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Kemasan disesuaikan agar ikan tetap nyaman selama perjalanan.</p>
+          </div>
+          <div>
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM2.25 12c0 4.556 4.03 8.25 9 8.25a9.77 9.77 0 0 0 2.62-.354L18 21l-1.07-3.2C18.83 16.33 21.75 14.3 21.75 12c0-4.556-4.03-8.25-9-8.25s-9.75 3.694-9.75 8.25Z"/></svg>
+            </span>
+            <h3 class="mt-4 font-semibold">Bebas tanya-tanya</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Baru pertama pelihara cupang? Kami bantu jelaskan cara merawatnya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONI (PLACEHOLDER) ========== -->
+    <section id="testimoni" class="mx-auto max-w-6xl scroll-mt-20 px-4 py-20 sm:px-6">
+      <div class="max-w-2xl">
+        <p class="text-sm font-semibold uppercase tracking-wider text-fin">Testimoni</p>
+        <h2 class="mt-2 font-serif text-3xl font-bold sm:text-4xl">Kata pelanggan kami</h2>
+        <p class="mt-4 text-muted">Bagian ini masih kosong. Isi dengan ulasan asli dari pelanggan (dengan izin mereka).</p>
+      </div>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <!-- PLACEHOLDER: ganti isi kartu dengan testimoni asli -->
+        <figure class="rounded-2xl border border-dashed border-line bg-white p-6">
+          <blockquote class="text-muted italic">[Tulis testimoni pelanggan asli di sini]</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-ink">[Nama pelanggan], [Kota]</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-dashed border-line bg-white p-6">
+          <blockquote class="text-muted italic">[Tulis testimoni pelanggan asli di sini]</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-ink">[Nama pelanggan], [Kota]</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-dashed border-line bg-white p-6">
+          <blockquote class="text-muted italic">[Tulis testimoni pelanggan asli di sini]</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-ink">[Nama pelanggan], [Kota]</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== CTA WHATSAPP ========== -->
+    <section class="px-4 pb-20 sm:px-6">
+      <div class="mx-auto max-w-6xl rounded-3xl bg-primary px-6 py-14 text-center text-white sm:px-12">
+        <h2 class="font-serif text-3xl font-bold text-balance sm:text-4xl">Sudah menemukan cupang idaman?</h2>
+        <p class="mx-auto mt-4 max-w-xl text-sky-100">Kirim pesan ke kami. Sebutkan jenis atau warna yang kamu suka, nanti kami kirimkan foto dan video ikan yang tersedia.</p>
+        <a href="#" data-wa class="mt-8 inline-flex min-h-[52px] items-center gap-3 rounded-full bg-cta px-8 text-lg font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-cta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+          Chat di WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:px-6">
+      <p>&copy; <span id="tahun"></span> Seerip Betta</p>
+      <p>Ikan cupang hias · Usaha kecil lokal</p>
+    </div>
+  </footer>
+
+  <script>
+    // GANTI nomor ini dengan nomor WhatsApp kamu (format 62..., tanpa + dan tanpa 0 di depan)
+    const NOMOR_WA = '62XXXXXXXXXX';
+    const PESAN = 'Halo Seerip Betta, saya mau tanya stok ikan cupang.';
+
+    const linkWA = `https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(PESAN)}`;
+    document.querySelectorAll('[data-wa]').forEach((a) => {
+      a.href = linkWA;
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+    document.getElementById('tahun').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
